@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASV – Přihlášení</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f0f2f5;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .login-card {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      width: 340px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 24px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 16px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      background: #0055ff;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: #003fcc;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-card">
+    <form method="POST" action="login.php">
+      <img src="asv.png" alt="ASV logo" style="width:360px; margin-bottom:10px;" />
+      <input type="text" name="username" placeholder="Uživatelské jméno" />
+      <input type="password" name="password" placeholder="Heslo" />
+      <button type="submit">Přihlásit se</button>
+    </form>
+    <div class="footer">© 2025 ASV</div>
+  </div>
+</body>
+</html>
